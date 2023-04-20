@@ -5,15 +5,15 @@ import numpy as np
 from sentence_transformers.SentenceTransformer import SentenceTransformer
 
 
-class SBertReuse(BaseFeatureExtraction):
+class MiniLMReuse(BaseFeatureExtraction):
     """SBert feature extractor that reuses feature matrices."""
 
-    name = "reuseable_sbert"
-    label = "Sentence BERT reuse"
+    name = "reuseable_MiniLM"
+    label = "MiniLM reuse"
 
     def __init__(self,
                  *args,
-                 model_name='all-mpnet-base-v2',
+                 model_name='all-MiniLM-L12-v2',
                  **kwargs):
         super().__init__(*args, **kwargs)
         self.show_progress_bar = True

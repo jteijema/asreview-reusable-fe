@@ -2,10 +2,10 @@ from setuptools import setup
 from setuptools import find_namespace_packages
 
 setup(
-    name='asreview-simulation-project',
+    name='asreview-reusable-sbert-project',
     version='1.0',
-    description='asreview-simulation-project',
-    url='https://github.com/jteijema/asreview-simulation-project',
+    description='asreview-reusable-sbert-project',
+    url='https://github.com/jteijema/asreview-reusable-sbert-project',
     author='Jelle Teijema',
     author_email='asreview@uu.nl',
     classifiers=[
@@ -26,6 +26,8 @@ setup(
         ],
         'asreview.models.feature_extraction': [
             'reuseable_sbert = asreviewcontrib.models:SBertReuse',
+            'reuseable_MiniLM = asreviewcontrib.models:MiniLMReuse',
+
         ],
         'asreview.models.balance': [
         ],
