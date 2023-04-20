@@ -2,11 +2,11 @@ from setuptools import setup
 from setuptools import find_namespace_packages
 
 setup(
-    name='asreview-template-model-extension',
+    name='asreview-simulation-project',
     version='1.0',
-    description='Example classifier extension',
-    url='https://github.com/asreview/asreview',
-    author='ASReview team',
+    description='asreview-simulation-project',
+    url='https://github.com/jteijema/asreview-simulation-project',
+    author='Jelle Teijema',
     author_email='asreview@uu.nl',
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -19,20 +19,17 @@ setup(
     packages=find_namespace_packages(include=['asreviewcontrib.*']),
     python_requires='~=3.6',
     install_requires=[
-        'asreview>=1.0'
+        'asreview>=1.2'
     ],
     entry_points={
         'asreview.models.classifiers': [
-            'nb_example = asreviewcontrib.models:NaiveBayesDefaultParamsModel',
         ],
         'asreview.models.feature_extraction': [
-            # define feature_extraction algorithms
+            'reuseable_sbert = asreviewcontrib.models:SBertReuse',
         ],
         'asreview.models.balance': [
-            # define balance strategy algorithms
         ],
         'asreview.models.query': [
-            # define query strategy algorithms
         ]
     },
     project_urls={
