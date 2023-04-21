@@ -2,10 +2,10 @@ from setuptools import setup
 from setuptools import find_namespace_packages
 
 setup(
-    name='asreview-reusable-sbert-project',
+    name='asreview-reusable-fe',
     version='1.0',
-    description='asreview-reusable-sbert-project',
-    url='https://github.com/jteijema/asreview-reusable-sbert-project',
+    description='asreview-reusable-fe',
+    url='https://github.com/jteijema/asreview-reusable-fe',
     author='Jelle Teijema',
     author_email='asreview@uu.nl',
     classifiers=[
@@ -35,7 +35,7 @@ setup(
         ]
     },
     project_urls={
-        'Bug Reports': 'https://github.com/asreview/asreview/issues',
-        'Source': 'https://github.com/asreview/asreview/',
+        'Bug Reports': 'https://github.com/jteijema/asreview-reusable-fe/issues',
+        'Source': 'https://github.com/jteijema/asreview-reusable-fe/',
     },
 )
