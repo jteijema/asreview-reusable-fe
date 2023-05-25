@@ -25,8 +25,8 @@ setup(
         'asreview.models.classifiers': [
         ],
         'asreview.models.feature_extraction': [
-            'reuseable_sbert = asreviewcontrib.models:SBertReuse',
-            'reuseable_MiniLM = asreviewcontrib.models:MiniLMReuse',
+            'reuseable_sbert = asreviewcontrib.models:reuseable_sbert',
+            'reuseable_MiniLM = asreviewcontrib.models:reuseable_MiniLM',
 
         ],
         'asreview.models.balance': [
