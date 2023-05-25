@@ -9,7 +9,6 @@ class MiniLMReuse(BaseFeatureExtraction):
     """SBert feature extractor that reuses feature matrices."""
 
     name = "reuseable_MiniLM"
-    label = "MiniLM reuse"
 
     def __init__(self,
                  *args,

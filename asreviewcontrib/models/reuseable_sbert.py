@@ -9,7 +9,6 @@ class SBertReuse(BaseFeatureExtraction):
     """SBert feature extractor that reuses feature matrices."""
 
     name = "reuseable_sbert"
-    label = "Sentence BERT reuse"
 
     def __init__(self,
                  *args,
